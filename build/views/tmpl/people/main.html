@@ -1,0 +1,15 @@
+ <div class="row">
+   <div class="col-sm-12">
+     <table>
+       <tr dir-paginate="people in data | itemsPerPage: limit" total-items="total" current-page="pagination.current">
+         <td style="cursor: pointer;" ng-click="showdetail(people)">{{ people.name }}</td>
+       </tr>
+     </table>
+
+     <dir-pagination-controls on-page-change="pageChanged(newPageNumber)"></dir-pagination-controls>
+
+
+
+   </div>
+ </div>
+
